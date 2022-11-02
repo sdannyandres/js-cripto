@@ -11,7 +11,7 @@ const iv = crypto.randomBytes(16);
 
 //-- console.log(hash('welcome', 'md5'))//
 
-const crypto = require('crypto');
+const crypto = require("crypto");
 const algorithm = 'aes-256-cbc';
 function encrypt(text) {
     let cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(key), iv);
@@ -31,4 +31,3 @@ function decrypt(text) {
     var hw = encrypt("Vamos a encriptar un texto");
     console.log(hw)
     console.log(decrypt(hw))
-    
